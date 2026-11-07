@@ -6,19 +6,45 @@ The instructions live in [`SKILL.md`](SKILL.md). Harnesses that follow the [Agen
 
 ## Install
 
-From this folder, into every supported harness, for all projects:
+Every supported harness, for all projects:
 
 ```bash
-npx skills add /Users/b514xo/Projects/reviewable-prs -g -a '*' -y
+npx skills add joseporiolayats/reviewable-prs -g -a '*' -y
 ```
 
-After you push this repository, the same command works from the GitHub shorthand:
+One harness. `-a` takes the skills CLI agent name. Drop `-g` to install into the current project only. From a local checkout, replace `joseporiolayats/reviewable-prs` with the folder path.
+
+Claude Code (`~/.claude/skills/`):
 
 ```bash
-npx skills add <owner>/reviewable-prs -g -a '*' -y
+npx skills add joseporiolayats/reviewable-prs -g -a claude-code -y
 ```
 
-Drop `-g` to install into the current project only. Replace `'*'` with one harness name, such as `claude-code` or `codex`, to install into that harness only.
+Codex (`~/.agents/skills/`):
+
+```bash
+npx skills add joseporiolayats/reviewable-prs -g -a codex -y
+```
+
+GitHub Copilot (`~/.copilot/skills/`). The agent name is `github-copilot`:
+
+```bash
+npx skills add joseporiolayats/reviewable-prs -g -a github-copilot -y
+```
+
+Hermes (`~/.hermes/skills/`). The agent name is `hermes-agent`:
+
+```bash
+npx skills add joseporiolayats/reviewable-prs -g -a hermes-agent -y
+```
+
+Pi (`~/.agents/skills/`, the same global folder Codex uses):
+
+```bash
+npx skills add joseporiolayats/reviewable-prs -g -a pi -y
+```
+
+A global Codex install and a global Pi install land in the same directory, so either command is enough for both.
 
 Update later with `npx skills update reviewable-prs`.
 
