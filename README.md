@@ -1,5 +1,7 @@
 # reviewable-prs
 
+<img src="assets/logo.png" alt="A gold medal with a green plus and a red minus" width="180">
+
 Agent skill for small, reviewable pull requests: one workspace package, one concern, every branch cut from the same base.
 
 The instructions live in [`SKILL.md`](SKILL.md). Harnesses that follow the [Agent Skills](https://agentskills.io) format load that file. This includes Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, and Grok.
