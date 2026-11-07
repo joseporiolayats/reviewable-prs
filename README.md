@@ -1,6 +1,6 @@
 # reviewable-prs
 
-<img src="assets/logo.png" alt="A gold medal with a green plus and a red minus" width="180">
+<img src="assets/logo.jpg" alt="A black-and-white muscular smiling man in three-quarter view, wearing a gold medal with a glowing green plus and a glowing red minus" width="280">
 
 Agent skill for small, reviewable pull requests: one workspace package, one concern, every branch cut from the same base.
 
