@@ -7,9 +7,15 @@ description: >
   diff that makes that change true. Stack only when a later slice cannot pass
   its own checks without an unmerged parent. Split hand-written logic past
   about 400 lines. Use when the user asks for small PRs, incremental PRs,
-  one package per PR, reviewable diffs, a common base instead of a stack,
-  or runs /reviewable-prs. Also use before implementing work that would
-  touch more than one package or grow past a single review.
+  one package per PR, reviewable diffs, split this PR, smaller diffs,
+  slice the work, one sitting, monorepo PR, draft PRs, a common base
+  instead of a stack, or /reviewable-prs. Also use before implementing
+  work that would touch more than one package or grow past a single review.
+when_to_use: >
+  Trigger on: split this into reviewable pull requests; one package per PR;
+  one concern per PR; cut every branch from the base; this diff is too big
+  to review; ship this in slices; keep the change minimal; incremental
+  implementation; open a draft PR per step; do not stack these branches.
 license: MIT
 ---
 
