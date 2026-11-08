@@ -1,14 +1,15 @@
 ---
 name: reviewable-prs
 description: >
-  Ship a change as small pull requests a human can review in one sitting.
-  One workspace package and one concern per PR. Every branch is cut from the
-  same base; stack only when a later slice cannot pass its checks without an
-  unmerged earlier diff. Keep each diff to the smallest correct change.
-  Use when the user asks for small PRs, incremental PRs, one package per PR,
-  reviewable diffs, a common base instead of a stack, or runs /reviewable-prs.
-  Also use before implementing work that would touch more than one package
-  or grow past a single review.
+  Stop a change from landing as one huge, stacked, multi-package diff.
+  Cut it into pull requests a human can review in one sitting: one workspace
+  package, one concern, every branch cut from the same base, and the smallest
+  diff that makes that change true. Stack only when a later slice cannot pass
+  its own checks without an unmerged parent. Split hand-written logic past
+  about 400 lines. Use when the user asks for small PRs, incremental PRs,
+  one package per PR, reviewable diffs, a common base instead of a stack,
+  or runs /reviewable-prs. Also use before implementing work that would
+  touch more than one package or grow past a single review.
 license: MIT
 ---
 
