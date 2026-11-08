@@ -1,16 +1,16 @@
 ---
 name: reviewable-prs
 description: >
-  Stop a change from landing as one huge, stacked, multi-package diff.
-  Cut it into pull requests a human can review in one sitting: one workspace
-  package, one concern, every branch cut from the same base, and the smallest
-  diff that makes that change true. Stack only when a later slice cannot pass
-  its own checks without an unmerged parent. Split hand-written logic past
-  about 400 lines. Use when the user asks for small PRs, incremental PRs,
-  one package per PR, reviewable diffs, split this PR, smaller diffs,
-  slice the work, one sitting, monorepo PR, draft PRs, a common base
-  instead of a stack, or /reviewable-prs. Also use before implementing
-  work that would touch more than one package or grow past a single review.
+  Use for small PRs, incremental PRs, one package per PR, reviewable diffs,
+  split this PR, smaller diffs, slice the work, one sitting, monorepo PR,
+  draft PRs, a common base instead of a stack, or /reviewable-prs. Also use
+  before work that would touch more than one package or grow past a single
+  review. Do not use for a code review, a commit message, or an intentional
+  stack. Cut the change into pull requests a human can review in one sitting:
+  one workspace package, one concern, every branch from the same base, and
+  the smallest diff that makes that change true. Stack only when a later
+  slice cannot pass its own checks without an unmerged parent. Split
+  hand-written logic past about 400 lines.
 when_to_use: >
   Trigger on: split this into reviewable pull requests; one package per PR;
   one concern per PR; cut every branch from the base; this diff is too big
